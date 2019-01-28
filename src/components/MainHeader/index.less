@@ -1,0 +1,42 @@
+@import '~antd/lib/style/themes/default.less';
+
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+
+.header {
+  background: #fff;
+}
+
+.lang {
+  text-align: right;
+  padding: 6px 5% 6px 0;
+  :global(.ant-dropdown-trigger) {
+    margin-right: 24px;
+  }
+}
+
+.logo {
+  padding-bottom: 17px;
+  text-align: center;
+  a {
+    display: inline-block;
+  }
+  img {
+    height: 38px;
+  }
+}
+
+.mainMenu {
+  text-align: center;
+  :global {
+    .ant-menu-root {
+      display: inline-block;
+      border-bottom-color: transparent;
+    }
+    .ant-menu-horizontal > .ant-menu-item:hover {
+      border-bottom-color: transparent;
+    }
+  }
+}
+
+@media only screen and (max-width: @screen-xs) {
+}
